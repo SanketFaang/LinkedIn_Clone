@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home2"/>
+    <item android:title="Video"
+        android:id="@+id/video"
+        android:icon="@drawable/videoimg"/>
+    <item android:title="My Network"
+        android:id="@+id/network"
+        android:icon="@drawable/baseline_people_24"/>
+    <item android:title="Notifications"
+        android:id="@+id/notifications"
+        android:icon="@drawable/baseline_notifications_24"/>
+    <item android:title="Jobs"
+        android:id="@+id/jobs"
+        android:icon="@drawable/baseline_home_repair_service_24"/>
+</menu>

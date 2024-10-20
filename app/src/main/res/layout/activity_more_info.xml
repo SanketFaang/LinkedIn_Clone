@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- LinkedIn Logo -->
+    <ImageView
+        android:id="@+id/linkedin_logo"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="LinkedIn Logo"
+        android:src="@drawable/linkedin_logo" />
+
+    <!-- Profile Info Title -->
+    <TextView
+        android:id="@+id/profile_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your profile helps you discover new people and opportunities"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/proffesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profession*"
+            android:layout_marginBottom="24dp"
+            android:paddingBottom="20dp"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    <EditText
+        android:id="@+id/location_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location*"
+        android:layout_marginBottom="24dp"
+        android:paddingBottom="20dp"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    <!-- University Input -->
+    <EditText
+        android:id="@+id/university_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="University or school / Skills*"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:paddingBottom="20dp"
+        android:textSize="18sp" />
+
+    <!-- Start Year Input -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userphoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/google_icon_2"
+        />
+
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/add_a_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add a photo"
+        android:backgroundTint="#0A66C1"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:backgroundTint="#0A66C1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>

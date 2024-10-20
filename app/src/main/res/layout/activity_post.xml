@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    tools:context=".PostActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_watch_later_24"
+        app:layout_constraintEnd_toStartOf="@+id/postingbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/cancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_cancel_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/dog"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelbutton"
+        app:layout_constraintStart_toEndOf="@+id/cancelbutton"
+        app:layout_constraintTop_toTopOf="@+id/cancelbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/postingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/shareyourT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttonshape"
+        android:gravity="start|top"
+        android:hint="Share your thoughts..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/postingbutton"
+        app:layout_constraintStart_toStartOf="@+id/cancelbutton"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView2"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageButton
+        android:id="@+id/imagefromgal"
+        android:layout_width="34dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <ImageButton
+        android:id="@+id/postaddbtn"
+        android:layout_width="23dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.683"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginBottom="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/shareyourT"
+        app:layout_constraintStart_toStartOf="@+id/shareyourT"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

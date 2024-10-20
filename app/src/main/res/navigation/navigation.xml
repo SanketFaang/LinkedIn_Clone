@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.jhainusa.learningbnv.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/jobs"
+        android:name="com.jhainusa.learningbnv.fragments.Jobs"
+        android:label="fragment_jobs"
+        tools:layout="@layout/fragment_jobs" />
+    <fragment
+        android:id="@+id/network"
+        android:name="com.jhainusa.learningbnv.fragments.Network"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/video"
+        android:name="com.jhainusa.learningbnv.fragments.Video"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.jhainusa.learningbnv.fragments.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

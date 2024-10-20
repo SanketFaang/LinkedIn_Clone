@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "792109971732",
+    "firebase_url": "https://learningbnvlinkedin-default-rtdb.firebaseio.com",
+    "project_id": "learningbnvlinkedin",
+    "storage_bucket": "learningbnvlinkedin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792109971732:android:7132be782c17872c03aa01",
+        "android_client_info": {
+          "package_name": "com.jhainusa.imagesfb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl0ZMH5yifGKgAV8p4kYjkH2RRGP9byAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792109971732:android:e4fa6987333e2d7b03aa01",
+        "android_client_info": {
+          "package_name": "com.jhainusa.learningbnv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl0ZMH5yifGKgAV8p4kYjkH2RRGP9byAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

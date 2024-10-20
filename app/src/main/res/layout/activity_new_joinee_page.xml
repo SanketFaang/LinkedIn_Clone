@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".NewJoinee_page">
+
+    <!-- LinkedIn Logo -->
+    <ImageView
+        android:id="@+id/linkedin_logo"
+        android:layout_width="246dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/linkedin_logo" />
+
+    <!-- Welcome text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join a trusted community of 1B professionals"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp" />
+
+    <!-- Agree & Join Button -->
+    <Button
+        android:id="@+id/btn_agree_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agree &amp; Join"
+        android:padding="11dp"
+        android:textSize="18sp"
+        android:backgroundTint="#0F69C2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Google Login Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:text="Continue with Google"
+        android:paddingLeft="20dp"
+        android:drawableStart="@drawable/google_icon_2"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Facebook Login Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:background="@drawable/buttonshape"
+        android:paddingLeft="20dp"
+        android:drawableStart="@drawable/facebook_3_1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sign in link -->
+    <TextView
+        android:id="@+id/sign_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="Sign in"
+        android:textColor="#0F69C1"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+</LinearLayout>

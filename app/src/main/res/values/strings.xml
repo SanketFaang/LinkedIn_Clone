@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Learningbnv</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_dev">Web Development Journey\nDay 22 : Javascript\n\Today , I dove deep into the Document...</string>
+    <string name="des1">Top 5 JavaScript Frameworks of 2024 🔥\n\nChoosing the right JavaScript framework is crucial for successful web development in 2024. \n\nWith many options available, this post highlights five standout frameworks that offer unique features and benefits. \n\nEach framework can enhance your development experience and streamline your workflow. \n\nLet’s dive into what makes these frameworks essential for modern web projects!</string>
+    <string name="des2">GLMC is a leading platform for global labor market dialogue, launched in Riyadh to drive positive change and foster collaboration. Join us for the 2nd edition on January 29-30, 2025, as we tackle key challenges in labor practices.</string>
+    <string name="des3">Hello Guys\nToday\'s New Update 🥳 \n\n🚀 Front-End Developer Roadmap: Your Guide to Mastering Web Development 🚀\n\nAs a front-end developer, having a structured learning path can make all the difference in navigating through the ever-growing list of tools and technologies.\n\n🔑 Key Topics to Focus On:\n\n💡 HTML, CSS, JavaScript – The backbone of web development. Mastering these will set a strong foundation.\n</string>
+</resources>

@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- LinkedIn Logo -->
+
+    <!-- Add your name Title -->
+    <ImageView
+        android:id="@+id/linkedin_logo"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="LinkedIn Logo"
+        android:src="@drawable/linkedin_logo" />
+
+    <TextView
+        android:id="@+id/add_your_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- First Name Input -->
+    <EditText
+        android:id="@+id/first_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="16dp"
+        android:hint="First name*"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <!-- Last Name Input -->
+    <EditText
+        android:id="@+id/last_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingBottom="20dp"
+        android:hint="Last name*"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Email or Phone*"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/baseline_lock_24"
+        android:paddingRight="20dp"
+        android:textSize="18sp" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:backgroundTint="#0A66C1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>
