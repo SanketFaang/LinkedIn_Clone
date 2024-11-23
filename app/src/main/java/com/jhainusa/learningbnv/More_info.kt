@@ -19,10 +19,12 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.net.URL
 
 class More_info : AppCompatActivity() {
-    lateinit var database: FirebaseDatabase
     val db = FirebaseFirestore.getInstance() // Firestore instance
     val storageRef = FirebaseStorage.getInstance().reference // Storage reference
     val binding: ActivityMoreInfoBinding by lazy {
@@ -81,7 +83,9 @@ class More_info : AppCompatActivity() {
                         val prof=binding.proffesion.text.toString()
                         val location=binding.locationInput.text.toString()
                         val skills=binding.universityInput.text.toString()
+                        CoroutineScope(Dispatchers.IO).launch {
                         saveProfileToFirestore(imageUrl,prof,location,skills)
+                        }
                     }
                         .addOnFailureListener {
                             Toast.makeText(this,"Failed to upload image : ${it.message}",Toast.LENGTH_SHORT).show()
@@ -89,7 +93,7 @@ class More_info : AppCompatActivity() {
                 }
         }
     }
-    private fun saveProfileToFirestore(imageUrl: String,prof:String,location:String,skills:String) {
+    private suspend fun saveProfileToFirestore(imageUrl: String,prof:String,location:String,skills:String) {
         val userId = FirebaseAuth.getInstance().currentUser?.uid
         val intent=intent
         val fname=intent.getStringExtra("fname")

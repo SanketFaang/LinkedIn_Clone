@@ -18,13 +18,15 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profileimg"
                 android:layout_width="50dp"
                 android:layout_height="54dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="4dp"
                 android:src="@drawable/cati"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.03"
@@ -38,7 +40,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
                 android:fontFamily="sans-serif"
                 android:text="Manvendra Patel"
                 android:textSize="16sp"
@@ -51,9 +52,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:drawableLeft="@drawable/baseline_add_24"
+                android:drawableLeft="@drawable/baseline_add_24_blue"
                 android:text="Follow"
-                android:textColor="@color/bluefollow"
+                android:drawablePadding="2dp"
+                android:textColor="#0A66C1"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -87,11 +89,11 @@
                 android:id="@+id/scrollView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
                 android:ellipsize="end"
                 android:maxLines="3"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:paddingStart="4dp"
                 android:paddingLeft="4dp"
                 android:paddingTop="6dp"
@@ -99,9 +101,10 @@
                 android:paddingRight="4dp"
                 android:paddingBottom="6dp"
                 android:text="@string/web_dev"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
                 app:layout_constraintStart_toStartOf="@+id/profileimg"
-                app:layout_constraintTop_toBottomOf="@+id/profileimg"></TextView>
+                app:layout_constraintTop_toBottomOf="@+id/profileimg">
+
+            </TextView>
 
             <ImageView
                 android:id="@+id/postimg"
@@ -130,8 +133,8 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:orientation="horizontal"
-                android:padding="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view2">
@@ -141,50 +144,68 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:background="@android:color/transparent"
                     android:drawableTop="@drawable/baseline_thumb_up_off_alt_24"
                     android:text="Like"
                     android:textAllCaps="false"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/comment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:background="@android:color/transparent"
                     android:drawableTop="@drawable/baseline_comment_24"
                     android:text="comment"
                     android:textAllCaps="false"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/repost"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:background="@android:color/transparent"
                     android:drawableTop="@drawable/baseline_repeat_24"
                     android:text="Repost"
                     android:textAllCaps="false"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/share"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:background="@android:color/transparent"
                     android:drawableTop="@drawable/baseline_send_24"
                     android:text="Share"
                     android:textAllCaps="false"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
 
             </LinearLayout>
 
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#787676"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

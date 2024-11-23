@@ -34,6 +34,12 @@ class InfoEntering_Page : AppCompatActivity() {
                     .addOnCompleteListener(this){
                         if(it.isSuccessful){
                             Toast.makeText(this,"Registration Successful",Toast.LENGTH_SHORT).show()
+                            val editor = getSharedPreferences("USER_PROFILE", MODE_PRIVATE).edit()
+                            editor.putString("fname",fname)
+                            editor.putString("lname",lname)
+                            editor.putString("email",email)
+                            editor.putString("pass",pass)
+                            editor.apply()
                             val intent=Intent(Intent(this,More_info::class.java))
                             intent.putExtra("fname",fname)
                             intent.putExtra("lname",lname)

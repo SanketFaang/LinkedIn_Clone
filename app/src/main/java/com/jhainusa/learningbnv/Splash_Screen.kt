@@ -2,38 +2,38 @@ package com.jhainusa.learningbnv
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.coroutines.*
 
-class Splash_Screen : AppCompatActivity() {
-    override fun onStart() {
-        super.onStart()
-        Handler(Looper.getMainLooper()).postDelayed({
+class SplashScreen : AppCompatActivity() {
 
-            val currentUser : FirebaseUser?=auth.currentUser
-            if(currentUser !=null){
-                startActivity(Intent(this,MainActivity::class.java))
-            }
-            else{
-                startActivity(Intent(this,NewJoinee_page::class.java))
-            }
-               finish()
-                                                    },2000)
+    private lateinit var auth: FirebaseAuth
 
-    }
-     private lateinit var auth:FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
-        auth=FirebaseAuth.getInstance()
 
+        // Initialize FirebaseAuth
+        auth = FirebaseAuth.getInstance()
 
+        // Launch a coroutine to handle splash screen delay and authentication check
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(2000) // Show splash screen for 2 seconds
+
+            // Check if the user is signed in
+            val currentUser: FirebaseUser? = withContext(Dispatchers.IO) { auth.currentUser }
+
+            // Navigate to the appropriate activity based on authentication state
+            if (currentUser != null) {
+                startActivity(Intent(this@SplashScreen, MainActivity::class.java))
+            } else {
+                startActivity(Intent(this@SplashScreen, NewJoinee_page::class.java))
+            }
+            finish()
+        }
     }
 }
